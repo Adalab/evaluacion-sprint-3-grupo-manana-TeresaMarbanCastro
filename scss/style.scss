@@ -1,11 +1,12 @@
+
+/* Core */
+@import 'core/variables';
+@import 'core/functions';
+@import 'core/mixins';
+
 /* Components */
 @import 'components/buttons';
 @import 'components/arrows';
-
-/* Core */
-@import 'core/functions';
-@import 'core/mixins';
-@import 'core/variables';
 
 /* Layout */
 @import 'layout/footer';

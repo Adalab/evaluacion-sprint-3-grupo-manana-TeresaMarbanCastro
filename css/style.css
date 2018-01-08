@@ -1,23 +1,99 @@
-/* Components *//* Core *//* Layout */footer {
-  background-color: #0F023A;
+/* Core *//* Components */.windowBtn {
+  color: #f26002;
+  border: solid 2px #f26002;
+  border-radius: 22.5px;
+  width: 76px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  background-color: #fff;
 }
 
-.hero {
-  background: url("../images/cover.jpg");
+.arrow-down {
+  background-color: #fff;
+  border-radius: 22.5px;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}/* Layout */footer {
+  background-color: #304268;
+}
+
+.heroPic {
+  background: url(/images/cover.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
-  width: 500px;
+  height: 568px;
+  width: 320px;
+}
+
+.heroText {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 284px;
+}
+
+.heroText .heroText p {
+  font-size: 16px;
+}
+
+.heroText .heroTitle {
+  font-size: 42px;
+  line-height: 55px;
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+  font-weight: 700;
 }
 
 header {
-  background-color: #33658A;
+  background-color: #0271bc;
 }/* Pages */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
   min-height: 100vh;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.window {
+  margin-bottom: 30px;
+}
+
+.window h2 {
+  color: #8ccbea;
+  font-size: 14px;
+}
+
+.window h3 {
+  font-size: 24px;
+}
+
+.window p {
+  color: #4a4a4a;
 }
 
 /*# sourceMappingURL=style.css.map */

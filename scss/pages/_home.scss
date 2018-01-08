@@ -1,6 +1,28 @@
 *{
 box-sizing: border-box;
 }
+html{
+	min-height: 100vh;
+}
 body{
 	min-height: 100vh;
+	font-family: $fontBold;
+}
+
+main{
+
+}
+
+.window {
+	margin-bottom: 30px;
+	h2{
+	color: $lighterColour;
+	font-size: 14px;
+	}
+	h3{
+		font-size: 24px;
+	}
+	p{
+		color: $darkGrey;
+	}
 }
