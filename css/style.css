@@ -9,6 +9,17 @@
   background-color: #fff;
 }
 
+.reasonsBtn {
+  color: #fff;
+  border: solid 2px #f26002;
+  border-radius: 22.5px;
+  width: 184px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  background-color: #f26002;
+}
+
 .arrow-down {
   background-color: #fff;
   border-radius: 22.5px;
@@ -72,6 +83,8 @@ header {
 
 html {
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -94,6 +107,54 @@ body {
 
 .window p {
   color: #4a4a4a;
+}
+
+.reasons {
+  background-color: #eff9ff;
+  display: grid;
+  grid-template-columns: 1fr 31% 31% 1fr;
+  grid-template-rows: 25% 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.reasons h3 {
+  font-size: 24px;
+  grid-row: 1;
+  grid-column: span 4;
+  margin-bottom: 0;
+}
+
+.reasons h4 {
+  font-size: 18px;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.reasons p {
+  font-size: 18px;
+}
+
+.reasons .reason1 {
+  grid-row: 2;
+  grid-column: span 2 / 4;
+}
+
+.reasons .reason2 {
+  grid-row: 3;
+  grid-column: span 2 / 4;
+}
+
+.reasons .reason3 {
+  grid-row: 4;
+  grid-column: span 2 / 4;
+}
+
+.reasons .reasonsBtn {
+  grid-row: 5;
+  grid-column: 2 / 4;
+  margin-top: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
