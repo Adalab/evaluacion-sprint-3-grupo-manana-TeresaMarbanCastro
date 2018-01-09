@@ -1,3 +1,20 @@
+.menu-trigger{
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	background-color: $lightColour;
+	z-index: 1;
+}
+.menu-close{
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	color: $whiteColour;
+	background-color: $brightColour;
+	border: solid 2px $brightColour;
+	// left: -100%;
+	z-index: 1;
+}
 .windowBtn{
 	color: $brightColour;
 	border: solid 2px $brightColour;
@@ -8,7 +25,6 @@
 	line-height: 45px;
 	background-color: $whiteColour;
 }
-
 .reasonsBtn{
 	color: $whiteColour;
 	border: solid 2px $brightColour;
@@ -18,4 +34,5 @@
 	font-size: 20px;
 	line-height: 45px;
 	background-color: $brightColour;
+	justify-self: center;
 }

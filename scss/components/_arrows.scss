@@ -5,4 +5,17 @@
 	height: 45px;
 	display: flex;
 	justify-content: center;
+	border-style: solid;
+}
+
+.arrow-up{
+	background-color: $whiteColour;
+	border-radius: 22.5px;
+	box-shadow: 0;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	border-style: solid;
+	align-self: center;
 }

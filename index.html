@@ -11,30 +11,35 @@
 	<title>Ejercicio Evaluación Sprint 3</title>
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="heroPic">
 			<div class="heroText">
 				<h1 class="heroTitle">ANONYMOUS PROXY</h1>
 				<p>In hac habitasse platea dictumst.</p>
-				<div class="arrow-down"><img src="images/ico-scroll-down.svg"></div>
+				<button class="arrow-down"><a href="#reasonStart"><img src="images/ico-scroll-down.svg"></a></button>
 			</div>
 		</div>
-		<nav class="menu">
-			<button></button>
-				<ul>
-					<li></li>
-				</ul>
-		</nav>
 	</header>
+	<nav class="menu">
+		<button class="menu-trigger"><img src="../images/ico-menu.svg"></button>
+		<div class="showCompleteMenu">
+			<button class="menu-close" title="Close">X</button>
+			<ul class="menuList">
+				<li class="menu-item1"><a href="#header">Anonymous Proxy</a></li>
+				<li class="menu-item"><a href="#window">Insomnia Tips</a></li>
+				<li class="menu-item"><a href="#reasonStart">Reasons To Purchase</a></li>
+			</ul>
+		</div>
+	</nav>
 
 <main>
-	<div class="window">
+	<div class="window" id="window">
 		<h2>Insomnia Tips</h2>
 		<h3>Looking Through A Window</h3>
 		<p>Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
 		<button class="windowBtn">Go</button>
 	</div>
-	<div class="reasons">
+	<div id="reasonStart" class="reasons">
 		<h3>3 Reasons To Purchase</h3>
 		<div class="reason1">
 			<h4>Ut sed metus</h4>
@@ -50,12 +55,15 @@
 		</div>
 		<button class="reasonsBtn">More reasons</button>
 	</div>
-	<div class="arrow-up">
-		<button></button>
-	</div>
+
+
 </main>
 <footer>
-
+	<button class="arrow-up"><a href="#header"><img src="images/ico-arrow.svg"></a></button>
+	<div class="copyright">
+	<p>©2017</p>
+	<p>we<span>❤︎</span>components</p>
+	</div>
 </footer>
 <script src="js/main.js"></script>
 </body>

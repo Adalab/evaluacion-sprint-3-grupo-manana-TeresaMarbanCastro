@@ -1,3 +1,56 @@
 header {
 	background-color: $lightColour;
+	position: relative;
+	button{
+		background-color: $lightColour;
+		width: 44px;
+		height: 44px;
+	}
+	}
+	.menu{
+		background-color: $lightColour;
+		width: 44px;
+		height: 44px;
+		position: absolute;
+		top: 0;
+		cursor: pointer;
+		transition: background ease 0.5s;
+	&:hover {
+		background: $darkColour;
+	}
+}
+.showCompleteMenu{
+	position: absolute;
+	left: -1000%;
+	list-style: none;
+	a{
+	text-decoration: none;
+	color: $whiteColour;
+	}
+	.menu-item1{
+		margin-top: 50px;
+		margin-bottom: 25px;
+		display: block;
+	}
+	.menu-item{
+		margin-bottom: 25px;
+		display: block;
+	}
+}
+.show{
+	position: absolute;
+	left: 0;
+	transition: left ease 1s;
+	z-index: 1;
+	background-color: $darkColour;
+	width: 50vw;
+	height: 96vh;
+	margin: 0;
+}
+.closingMenu{
+	position: relative;
+	right: -160px;
+	transition: left ease 1.5s;
+	z-index: 1;
+
 }
