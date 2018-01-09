@@ -31,7 +31,7 @@ fetch('https://three-random-reasons-izwfjpgbqm.now.sh')
     var reasons = json.reasons;
     var listHTML = '';
     for (var i = 0; i < reasons.length; i++) {
-      listHTML += '<div>' + reasons[i] + '</div>';
+      listHTML += '<div><h2>' + reasons[i].title + '</h2><p>' + reasons [i].description + '</p></div>';
     }
     var divAjax = document.querySelector('.divReasons');
     divAjax.innerHTML = listHTML;
