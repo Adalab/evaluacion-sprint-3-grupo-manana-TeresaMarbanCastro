@@ -30,10 +30,11 @@ fetch('https://three-random-reasons-izwfjpgbqm.now.sh')
   .then(function(json){
     var reasons = json.reasons;
     var listHTML = '';
+		var divAjax = document.querySelector('.divReasons');
     for (var i = 0; i < reasons.length; i++) {
       listHTML += '<div><h2>' + reasons[i].title + '</h2><p>' + reasons [i].description + '</p></div>';
+			// divAjax.appendChild(listHTML);
     }
-    var divAjax = document.querySelector('.divReasons');
     divAjax.innerHTML = listHTML;
   });
 }

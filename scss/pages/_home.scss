@@ -39,10 +39,24 @@ body{
 	background-color: $lightBlue;
 	text-align: center;
 	width: 100%;
-	padding: 0;
+	display: grid;
 	h3{
 		font-size: 24px;
 		margin-bottom: 0;
+		padding-top: 30px;
+	}
+	.reason1{}
+	.reason2{}
+	.reason3{}
+	}
+	.reasonsList{
+		padding-left:73px;
+		padding-right: 73px;
+	}
+	.divReasons{
+		padding-left:73px;
+		padding-right: 73px;
+	}
 // <<<<<<< HEAD
 // 		@media all and (min-width: 700px){
 // 			grid-row: 1;
@@ -114,10 +128,3 @@ body{
 // 		grid-template-columns: 1fr 1fr 1fr;
 // >>>>>>> d7f524db71a5ee3bd59256f776948ad669fef0ad
 // 	}
-}
-.reason1{}
-.reason2{}
-.reason3{}
-.reasonsBtn{
-	margin-top: 45px;
-}

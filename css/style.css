@@ -40,6 +40,8 @@
   line-height: 45px;
   background-color: #f26002;
   justify-self: center;
+  margin-bottom: 60px;
+  margin-top: 45px;
 }
 
 .arrow-down {
@@ -295,46 +297,33 @@ body {
   background-color: #eff9ff;
   text-align: center;
   width: 100%;
-  padding: 0;
+  display: grid;
 }
 
 .reasons h3 {
   font-size: 24px;
   margin-bottom: 0;
-}
-
-.reasons h4 {
-  font-size: 18px;
-  font-family: "Roboto Slab", sans-serif;
-}
-
-.reasons p {
-  font-size: 18px;
+  padding-top: 30px;
 }
 
 .reasonsList {
-  display: grid;
-  grid-template-columns: 1fr;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
-.reasonsBtn {
-  margin-top: 45px;
+.divReasons {
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 @media all and (min-width: 700px) {
   .heroText {
-    padding-top: 384px;
+    padding-top: 104px;
   }
 
   .heroText .heroTitle {
     font-size: 80px;
     line-height: 106px;
-  }
-
-  .reasonsList {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
