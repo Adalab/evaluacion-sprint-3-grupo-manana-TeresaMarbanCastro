@@ -2,7 +2,10 @@
 	width: 44px;
 	height: 44px;
 	position: absolute;
+	top: 0;
+	left: 0;
 	background-color: $lightColour;
+	border: 0 solid;
 	z-index: 1;
 }
 .menu-close{

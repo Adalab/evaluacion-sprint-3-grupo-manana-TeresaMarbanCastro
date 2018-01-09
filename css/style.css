@@ -2,7 +2,10 @@
   width: 44px;
   height: 44px;
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: #0271bc;
+  border: 0 solid;
   z-index: 1;
 }
 
@@ -178,52 +181,62 @@ header button {
 }
 
 .menu {
-  background-color: #0271bc;
-  width: 44px;
-  height: 44px;
-  position: absolute;
+  background-color: #0271bc 0.96;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  -webkit-transform: translateX(-150%);
+  transform: translateX(-150%);
+  z-index: 1;
   top: 0;
+  left: 0;
   cursor: pointer;
-  -webkit-transition: background ease 0.5s;
-  transition: background ease 0.5s;
-}
-
-.menu:hover {
-  background: #304268;
+  -webkit-transition: background ease 2s 0.7s, -webkit-transform ease 0.8s;
+  transition: background ease 2s 0.7s, -webkit-transform ease 0.8s;
+  transition: transform ease 0.8s, background ease 2s 0.7s;
+  transition: transform ease 0.8s, background ease 2s 0.7s, -webkit-transform ease 0.8s;
 }
 
 .showCompleteMenu {
-  position: absolute;
-  left: -1000%;
+  position: relative;
   list-style: none;
+  width: 276px;
+  height: 100%;
+  background-color: #fff;
 }
 
 .showCompleteMenu a {
   text-decoration: none;
-  color: #fff;
+  color: #4a4a4a;
+  display: block;
 }
 
 .showCompleteMenu .menu-item1 {
-  margin-top: 50px;
-  margin-bottom: 25px;
+  padding-top: 44px;
   display: block;
 }
 
 .showCompleteMenu .menu-item {
   margin-bottom: 25px;
+  padding-left: 25px;
   display: block;
 }
 
-.show {
+.menu-close {
   position: absolute;
-  left: 0;
-  -webkit-transition: left ease 1s;
-  transition: left ease 1s;
-  z-index: 1;
-  background-color: #304268;
-  width: 50vw;
-  height: 96vh;
+  top: 0;
+  left: 100%;
+}
+
+.menuList {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.show .menu {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .closingMenu {
@@ -232,6 +245,10 @@ header button {
   -webkit-transition: left ease 1.5s;
   transition: left ease 1.5s;
   z-index: 1;
+}
+
+.darkenBack {
+  background-color: opacity;
 }/* Pages */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

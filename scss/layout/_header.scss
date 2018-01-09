@@ -8,49 +8,62 @@ header {
 	}
 	}
 	.menu{
-		background-color: $lightColour;
-		width: 44px;
-		height: 44px;
-		position: absolute;
+		background-color: $lightColour 0.96;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		transform: translateX(-150%);
+		z-index: 1;
 		top: 0;
+		left: 0;
 		cursor: pointer;
-		transition: background ease 0.5s;
-	&:hover {
-		background: $darkColour;
-	}
+		transition: transform ease 0.8s, background ease 2s 0.7s;
+	// &:hover {
+	// 	background: $darkColour;
+	// }
 }
 .showCompleteMenu{
-	position: absolute;
-	left: -1000%;
+	position: relative;
 	list-style: none;
+	width: 276px;
+	height: 100%;
+	background-color: $whiteColour;
+
+
 	a{
 	text-decoration: none;
-	color: $whiteColour;
+		color: $darkGrey;
+		display: block;
 	}
 	.menu-item1{
-		margin-top: 50px;
-		margin-bottom: 25px;
+		padding-top: 44px;
 		display: block;
 	}
 	.menu-item{
 		margin-bottom: 25px;
+		padding-left: 25px;
 		display: block;
 	}
 }
-.show{
+.menu-close{
 	position: absolute;
-	left: 0;
-	transition: left ease 1s;
-	z-index: 1;
-	background-color: $darkColour;
-	width: 50vw;
-	height: 96vh;
+	top: 0;
+	left: 100%;
+}
+.menuList{
 	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.show .menu{
+	transform: translateX(0);
 }
 .closingMenu{
 	position: relative;
 	right: -160px;
 	transition: left ease 1.5s;
 	z-index: 1;
-
+}
+.darkenBack{
+	background-color: opacity
 }
