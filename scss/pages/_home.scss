@@ -29,73 +29,33 @@ body{
 
 .reasons{
 	background-color: $lightBlue;
-	display: grid;
-	grid-template-columns: 1fr 31% 31% 1fr;
-	grid-template-rows: 25% 1fr 1fr 1fr 1fr;
-	grid-gap: 0;
 	text-align: center;
 	width: 100%;
 	padding: 0;
-	@media all and (min-width: 700px){
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-	}
 	h3{
 		font-size: 24px;
-		grid-row: 1;
-		grid-column: span 4;
 		margin-bottom: 0;
-		@media all and(min-width: 700px){
-			grid-row: 1;
-			grid-column: span 3;
-		}
 	}
 	h4{
 		font-size: 18px;
 		font-family: $fontBold;
-		@media all and(min-width: 700px){
-			grid-row: 1;
-			grid-column: span 3;
-		}
 	}
 	p{
 		font-size: 18px;
-		@media all and(min-width: 700px){
-			grid-row: 1;
-			grid-column: span 3;
-		}
 	}
-	.reason1{
-		grid-row: 2;
-		grid-column: span 2 / 4;
-		@media all and(min-width: 700px){
-			grid-row: 2;
-			grid-column: span 1;
-		}
+}
+.reasonsList {
+	display: grid;
+	grid-template-columns: 1fr;
+	@media all and (min-width: 700px){
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
-	.reason2{
-		grid-row: 3;
-		grid-column: span 2 / 4 ;
-		@media all and(min-width: 700px){
-			grid-row: 2;
-			grid-column: span 2;
-		}
-	}
-	.reason3{
-		grid-row: 4;
-		grid-column: span 2 / 4;
-		@media all and(min-width: 700px){
-			grid-row: 2;
-			grid-column: span 3;
-		}
-	}
-	.reasonsBtn{
-		grid-row: 5;
-		grid-column: 2 / 4;
-		margin-top: 45px;
-		@media all and(min-width: 700px){
-			grid-row: 3;
-			grid-column: span 2;
-		}
-	}
+}
+.reason1{}
+.reason2{}
+.reason3{}
+.reasonsBtn{
+	margin-top: 45px;
 }
