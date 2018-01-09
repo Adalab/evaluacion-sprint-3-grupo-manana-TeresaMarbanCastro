@@ -74,7 +74,7 @@
   align-self: center;
 }/* Layout */footer {
   background-color: #304268;
-  width: 320px;
+  width: 100%;
   height: 128px;
   color: #fff;
   display: grid;
@@ -136,7 +136,7 @@ footer span {
   background-position: center;
   background-repeat: no-repeat;
   height: 568px;
-  width: 320px;
+  width: 100%;
 }
 
 .heroText {
@@ -181,7 +181,7 @@ header button {
 }
 
 .menu {
-  background-color: #0271bc 0.96;
+  background-color: #0271bc 0.5;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -330,6 +330,53 @@ body {
   grid-row: 5;
   grid-column: 2 / 4;
   margin-top: 45px;
+}
+
+@media all and (min-width: 700px) {
+  .heroText .heroTitle {
+    font-size: 80px;
+    line-height: 106px;
+  }
+
+  .reasons {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .reasons h3 {
+    grid-row: 1;
+    grid-column: span 3;
+  }
+
+  .reasons h4 {
+    grid-row: 1;
+    grid-column: span 3;
+  }
+
+  .reasons p {
+    grid-row: 1;
+    grid-column: span 3;
+  }
+
+  .reasons .reason1 {
+    grid-row: 2;
+    grid-column: span 1;
+  }
+
+  .reasons .reason2 {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .reasons .reason3 {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .reasons .reasonsBtn {
+    grid-row: 3;
+    grid-column: span 2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

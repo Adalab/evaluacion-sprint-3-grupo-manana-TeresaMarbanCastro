@@ -17,3 +17,31 @@ function closeMenu(){
 	// hideMenu.classList.remove('closingMenu');
 }
 hideMenu.addEventListener('click', closeMenu);
+
+//Request more reasons
+var request = new XMLHttpRequest();
+var buttonRequest = document.querySelector('.reasonsBtn');
+// function moreReasons(){
+	request.open('GET', 'https://three-random-reasons-izwfjpgbqm.now.sh/');
+	request.addEventListener('load', addReasons);
+	// request.send();
+// }
+function addReasons(){
+	var response = request.responseText;
+		var responseJSON = JSON.parse(response).reasons;
+		var listReasons= '';
+  for (var i = 0; i < responseJSON; i++) {
+    listReasons += '<div>' + responseJSON[i] + '</div>';
+  }
+  var div = document.querySelector('.divReasons');
+  div.innerHTML = listReasons;
+}
+console.log.addReasons();
+request.send();
+
+buttonRequest.addEventListener('click', newRequest);
+function newRequest(){
+	request = new XMLHttpRequest();
+	// moreReasons();
+}
+// moreReasons();

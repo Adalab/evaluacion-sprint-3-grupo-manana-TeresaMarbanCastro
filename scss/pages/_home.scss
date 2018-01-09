@@ -36,35 +36,66 @@ body{
 	text-align: center;
 	width: 100%;
 	padding: 0;
+	@media all and (min-width: 700px){
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
 	h3{
 		font-size: 24px;
 		grid-row: 1;
 		grid-column: span 4;
 		margin-bottom: 0;
+		@media all and(min-width: 700px){
+			grid-row: 1;
+			grid-column: span 3;
+		}
 	}
 	h4{
 		font-size: 18px;
 		font-family: $fontBold;
+		@media all and(min-width: 700px){
+			grid-row: 1;
+			grid-column: span 3;
+		}
 	}
 	p{
 		font-size: 18px;
-		// font-family: $fontRegular;
+		@media all and(min-width: 700px){
+			grid-row: 1;
+			grid-column: span 3;
+		}
 	}
 	.reason1{
 		grid-row: 2;
 		grid-column: span 2 / 4;
+		@media all and(min-width: 700px){
+			grid-row: 2;
+			grid-column: span 1;
+		}
 	}
 	.reason2{
 		grid-row: 3;
 		grid-column: span 2 / 4 ;
+		@media all and(min-width: 700px){
+			grid-row: 2;
+			grid-column: span 2;
+		}
 	}
 	.reason3{
 		grid-row: 4;
 		grid-column: span 2 / 4;
+		@media all and(min-width: 700px){
+			grid-row: 2;
+			grid-column: span 3;
+		}
 	}
 	.reasonsBtn{
 		grid-row: 5;
 		grid-column: 2 / 4;
 		margin-top: 45px;
+		@media all and(min-width: 700px){
+			grid-row: 3;
+			grid-column: span 2;
+		}
 	}
 }
