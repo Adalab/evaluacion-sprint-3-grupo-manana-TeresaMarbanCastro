@@ -1,5 +1,5 @@
 .heroPic{
-background: url(/images/cover.jpg);
+background: url(../images/cover.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -13,6 +13,9 @@ width: 100%;
 	align-items: center;
 	justify-content: center;
 	padding-top: 284px;
+	@media all and (min-width: 700px){
+		padding-top: 384px;
+	}
 	.heroText p{
 		font-size: 16px;
 

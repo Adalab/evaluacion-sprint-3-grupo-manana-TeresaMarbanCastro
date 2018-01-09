@@ -131,7 +131,7 @@ footer span {
 }
 
 .heroPic {
-  background: url(/images/cover.jpg);
+  background: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -269,18 +269,25 @@ body {
 
 .window {
   margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .window h2 {
   color: #8ccbea;
   font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 1px;
 }
 
 .window h3 {
+  margin-top: 0;
   font-size: 24px;
 }
 
 .window p {
+  margin-top: 15px;
+  margin-bottom: 30px;
   color: #4a4a4a;
 }
 
@@ -333,6 +340,10 @@ body {
 }
 
 @media all and (min-width: 700px) {
+  .heroText {
+    padding-top: 384px;
+  }
+
   .heroText .heroTitle {
     font-size: 80px;
     line-height: 106px;

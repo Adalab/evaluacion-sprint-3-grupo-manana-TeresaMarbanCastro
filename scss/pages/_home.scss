@@ -5,6 +5,7 @@ html{
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
+	// overflow-x: hidden;
 }
 body{
 	min-height: 100vh;
@@ -15,14 +16,21 @@ body{
 
 .window {
 	margin-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 	h2{
 	color: $lighterColour;
 	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 1px;
 	}
 	h3{
+		margin-top: 0;
 		font-size: 24px;
 	}
 	p{
+		margin-top: 15px;
+		margin-bottom: 30px;
 		color: $darkGrey;
 	}
 }
@@ -45,7 +53,7 @@ body{
 		grid-row: 1;
 		grid-column: span 4;
 		margin-bottom: 0;
-		@media all and(min-width: 700px){
+		@media all and (min-width: 700px){
 			grid-row: 1;
 			grid-column: span 3;
 		}
@@ -53,14 +61,14 @@ body{
 	h4{
 		font-size: 18px;
 		font-family: $fontBold;
-		@media all and(min-width: 700px){
+		@media all and (min-width: 700px){
 			grid-row: 1;
 			grid-column: span 3;
 		}
 	}
 	p{
 		font-size: 18px;
-		@media all and(min-width: 700px){
+		@media all and (min-width: 700px){
 			grid-row: 1;
 			grid-column: span 3;
 		}
@@ -68,7 +76,7 @@ body{
 	.reason1{
 		grid-row: 2;
 		grid-column: span 2 / 4;
-		@media all and(min-width: 700px){
+		@media all and (min-width: 700px){
 			grid-row: 2;
 			grid-column: span 1;
 		}
@@ -76,7 +84,7 @@ body{
 	.reason2{
 		grid-row: 3;
 		grid-column: span 2 / 4 ;
-		@media all and(min-width: 700px){
+		@media all and (min-width: 700px){
 			grid-row: 2;
 			grid-column: span 2;
 		}
@@ -84,7 +92,7 @@ body{
 	.reason3{
 		grid-row: 4;
 		grid-column: span 2 / 4;
-		@media all and(min-width: 700px){
+		@media all and (min-width: 700px){
 			grid-row: 2;
 			grid-column: span 3;
 		}
@@ -93,7 +101,7 @@ body{
 		grid-row: 5;
 		grid-column: 2 / 4;
 		margin-top: 45px;
-		@media all and(min-width: 700px){
+		@media all and (min-width: 700px){
 			grid-row: 3;
 			grid-column: span 2;
 		}
