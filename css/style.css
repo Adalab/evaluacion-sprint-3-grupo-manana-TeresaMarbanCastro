@@ -344,12 +344,48 @@ body {
 
 @media all and (min-width: 700px) {
   .heroText {
-    padding-top: 104px;
+    padding-top: 20%;
   }
 
   .heroText .heroTitle {
     font-size: 80px;
     line-height: 106px;
+  }
+
+  .reasonsList {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .divReasons {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media all and (min-width: 1028px) {
+  .windowBtn {
+    width: 109px;
+    height: 45px;
+  }
+
+  .window {
+    padding-left: 275px;
+    padding-right: 275px;
+    margin-top: 60px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .heroText {
+    padding-top: 9%;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 0;
+  }
+
+  .heroText .heroTitle {
+    font-size: 100px;
   }
 }
 

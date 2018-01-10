@@ -18,6 +18,11 @@ body{
 	margin-bottom: 30px;
 	padding-left: 15px;
 	padding-right: 15px;
+	@media all and (min-width: 1028px){
+		padding-left: 275px;
+		padding-right: 275px;
+		margin-top: 60px;
+	}
 	h2{
 	color: $lighterColour;
 	font-size: 14px;
@@ -59,6 +64,10 @@ body{
 .reasonsList{
 		padding-left:73px;
 		padding-right: 73px;
+		@media all and (min-width: 700px){
+			display: grid;
+			grid-auto-flow: column;
+		}
 }
 
 .divReasons{
@@ -68,6 +77,10 @@ body{
 	display: grid;
 	padding-left:73px;
 	padding-right: 73px;
+	@media all and (min-width: 700px){
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	}
 	h4{
 		margin-bottom: 0;
 	}

@@ -27,6 +27,10 @@
 	font-size: 20px;
 	line-height: 45px;
 	background-color: $whiteColour;
+	@media all and (min-width: 1028px){
+		width: 109px;
+		height: 45px;
+	}
 }
 .reasonsBtn{
 	color: $whiteColour;
