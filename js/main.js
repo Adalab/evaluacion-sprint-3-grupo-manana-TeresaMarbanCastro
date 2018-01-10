@@ -32,10 +32,10 @@ fetch('https://three-random-reasons-izwfjpgbqm.now.sh')
     var listHTML = '';
 		var divAjax = document.querySelector('.divReasons');
     for (var i = 0; i < reasons.length; i++) {
-      listHTML += '<div><h2>' + reasons[i].title + '</h2><p>' + reasons [i].description + '</p></div>';
+      listHTML += '<div><h4 class="reasons-title">' + reasons[i].title + '</h4><p>' + reasons [i].description + '</p></div>';
 			// divAjax.appendChild(listHTML);
     }
-    divAjax.innerHTML = listHTML;
+    divAjax.innerHTML += listHTML;
   });
 }
 var buttonRequest = document.querySelector('.reasonsBtn');
