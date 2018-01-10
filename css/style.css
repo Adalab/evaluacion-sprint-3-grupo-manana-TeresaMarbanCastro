@@ -137,7 +137,7 @@ footer span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 568px;
+  height: 100vh;
   width: 100%;
 }
 
@@ -172,18 +172,10 @@ footer span {
 }
 
 header {
-  background-color: #0271bc;
   position: relative;
 }
 
-header button {
-  background-color: #0271bc;
-  width: 44px;
-  height: 44px;
-}
-
 .menu {
-  background-color: #0271bc 0.5;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -193,10 +185,28 @@ header button {
   top: 0;
   left: 0;
   cursor: pointer;
-  -webkit-transition: background ease 2s 0.7s, -webkit-transform ease 0.8s;
-  transition: background ease 2s 0.7s, -webkit-transform ease 0.8s;
-  transition: transform ease 0.8s, background ease 2s 0.7s;
-  transition: transform ease 0.8s, background ease 2s 0.7s, -webkit-transform ease 0.8s;
+  -webkit-transition: background ease 0.5s, -webkit-transform ease 1s 0.5s;
+  transition: background ease 0.5s, -webkit-transform ease 1s 0.5s;
+  transition: transform ease 1s 0.5s, background ease 0.5s;
+  transition: transform ease 1s 0.5s, background ease 0.5s, -webkit-transform ease 1s 0.5s;
+}
+
+.show .menu {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background ease 0.8s 0.8s, -webkit-transform ease 0.8s;
+  transition: background ease 0.8s 0.8s, -webkit-transform ease 0.8s;
+  transition: transform ease 0.8s, background ease 0.8s 0.8s;
+  transition: transform ease 0.8s, background ease 0.8s 0.8s, -webkit-transform ease 0.8s;
+}
+
+.container {
+  background-color: transparent;
+  margin: 0;
+  height: 100%;
+  z-index: 1;
 }
 
 .showCompleteMenu {
@@ -239,18 +249,6 @@ header button {
 .show .menu {
   -webkit-transform: translateX(0);
   transform: translateX(0);
-}
-
-.closingMenu {
-  position: relative;
-  right: -160px;
-  -webkit-transition: left ease 1.5s;
-  transition: left ease 1.5s;
-  z-index: 1;
-}
-
-.darkenBack {
-  background-color: opacity;
 }/* Pages */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

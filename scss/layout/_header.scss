@@ -1,14 +1,13 @@
 header {
-	background-color: $lightColour;
 	position: relative;
-	button{
-		background-color: $lightColour;
-		width: 44px;
-		height: 44px;
-	}
+	// button{
+	// 	background-color: $lightColour;
+	// 	width: 44px;
+	// 	height: 44px;
+	// }
 	}
 	.menu{
-		background-color: $lightColour 0.5;
+		// background-color: rgba(0, 0, 0, 0);
 		width: 100%;
 		height: 100vh;
 		position: fixed;
@@ -17,10 +16,22 @@ header {
 		top: 0;
 		left: 0;
 		cursor: pointer;
-		transition: transform ease 0.8s, background ease 2s 0.7s;
+		transition: transform ease 1s 0.5s, background ease 0.5s; //salida
+		.show &{
+			transform: translateX(0);
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			transition: transform ease 0.8s, background ease 0.8s 0.8s; //entrada
+		}
 	// &:hover {
 	// 	background: $darkColour;
 	// }
+}
+.container{
+background-color: rgba(0, 0, 0, 0);
+ margin: 0;
+ height: 100%;
+ z-index: 1;
 }
 .showCompleteMenu{
 	position: relative;
@@ -28,8 +39,6 @@ header {
 	width: 276px;
 	height: 100%;
 	background-color: $whiteColour;
-
-
 	a{
 	text-decoration: none;
 		color: $darkGrey;
@@ -58,12 +67,9 @@ header {
 .show .menu{
 	transform: translateX(0);
 }
-.closingMenu{
-	position: relative;
-	right: -160px;
-	transition: left ease 1.5s;
-	z-index: 1;
-}
-.darkenBack{
-	background-color: opacity
-}
+// .closingMenu{
+// 	position: relative;
+// 	right: -160px;
+// 	transition: left ease 1.5s;
+// 	z-index: 1;
+// }

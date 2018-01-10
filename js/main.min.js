@@ -10,14 +10,12 @@ for (var i = 0; i < links.length; i++) {
 }
 function openMenu(){
 	body.classList.add('show');
-	// hideMenu.classList.add('closingMenu');
 }
 show.addEventListener('click', openMenu);
 
 //Hide Menu
 function closeMenu(){
 	body.classList.remove('show');
-	// hideMenu.classList.remove('closingMenu');
 }
 hideMenu.addEventListener('click', closeMenu);
 
